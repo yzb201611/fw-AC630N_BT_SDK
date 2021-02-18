@@ -19,7 +19,8 @@
  ```
  
 2. 双备份升级流程
-- ![update_flow_chart](./双备份被动升级流程图.png)
+![update_flow_chart](./双备份被动升级流程图.png)
+
 3. sdk相关配置
 
 4. api接口说明
