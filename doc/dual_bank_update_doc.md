@@ -1,5 +1,5 @@
-杰理升级结构——双备份升级使用介绍
-1. 双备份存储结构介绍
+# 杰理双备份升级介绍
+## 1. 双备份存储结构介绍
 ```
   ------------------
   - boot code      -
@@ -19,7 +19,7 @@
     - 设备主动升级（由设备端主动向远端获取升级数据，通信协议需要能支持文件内容获取能力）
     - 设备被动升级（由远端主动推送升级数据，设备端被动写入的方式，远端可控制升级流程）
  
-2. 双备份升级流程
+## 2. 双备份升级流程
 - 双备份设备被动升级流程图
 <br/>
 <div align="center">
@@ -35,7 +35,7 @@
 <br/>
 
 
-3. sdk相关配置
+## 3. sdk相关配置
   - 在app_config.h里打开
  ```
  #define    CONFIG_DOUBLE_BANK_ENABLE 1
@@ -51,7 +51,7 @@ SPECIAL_OPT=0;
 FORCE_4K_ALIGN=YES; // force aligin with 4k bytes
 #NEW_FLASH_FS=YES;   //enable single bank flash framework  
  ```
-4. api接口说明
+## 4. api接口说明
 ```
 /* @brief:Api for getting the buffer size for temporary storage
  */
