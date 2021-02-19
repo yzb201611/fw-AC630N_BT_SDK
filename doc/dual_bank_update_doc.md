@@ -20,13 +20,6 @@
     - 设备被动升级（由远端主动推送升级数据，设备端被动写入的方式，远端可控制升级流程）
  
 ## 2. 双备份升级流程
-- 双备份设备被动升级流程图
-<br/>
-<div align="center">
-  <img src="./双备份被动升级流程图.png" height="600">
-</div>
-<br/>
-
 - 双备份设备主动升级流程图
 <br/>
 <div align="center">
@@ -34,6 +27,12 @@
 </div>
 <br/>
 
+- 双备份设备被动升级流程图
+<br/>
+<div align="center">
+  <img src="./双备份被动升级流程图.png" height="600">
+</div>
+<br/>
 
 ## 3. sdk相关配置
   - 在app_config.h里打开
