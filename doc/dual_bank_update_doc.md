@@ -19,21 +19,22 @@
  ```
  
 2. 双备份升级流程
-- 双备份设备被动升级流程图
-<br/>
-<div align="center">
-  <img src="./双备份被动升级流程图.png" height="300">
-</div>
-<br/>
-<div align="center">
 
-- 双备份设备主动升级流程图
-- <br/>
-<div align="center">
-  <img src="./双备份设备主动升级.png" height="300">
-</div>
 <br/>
 <div align="center">
+  - 双备份设备被动升级流程图
+  <img src="./双备份被动升级流程图.png" height="600">
+</div>
+<br/>
+
+
+<br/>
+<div align="center">
+- 双备份设备主动升级流程图
+  <img src="./双备份设备主动升级.png" height="600">
+</div>
+<br/>
+
 
 
 
