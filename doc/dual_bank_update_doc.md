@@ -20,12 +20,25 @@
  
 2. 双备份升级流程
 - 双备份设备被动升级流程图
-- ![update_flow_chart](./双备份被动升级流程图.png)
+<br/>
+<div align="center">
+  <img src="./双备份被动升级流程图.png" height="300">
+</div>
+<br/>
+<div align="center">
+
 - 双备份设备主动升级流程图
-- ![active_update_flow_chart](./双备份设备主动升级.png)
+- <br/>
+<div align="center">
+  <img src="./双备份设备主动升级.png" height="300">
+</div>
+<br/>
+<div align="center">
+
 
 
 
 3. sdk相关配置
-- 
+--![update_flow_chart](./双备份被动升级流程图.png)
+-![active_update_flow_chart](./双备份设备主动升级.png)
 4. api接口说明
