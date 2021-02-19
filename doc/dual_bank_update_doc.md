@@ -50,7 +50,45 @@ SPECIAL_OPT=0;
 FORCE_4K_ALIGN=YES; // force aligin with 4k bytes
 #NEW_FLASH_FS=YES;   //enable single bank flash framework  
  ```
-## 4. api接口说明
+ - 设备主动升级流程采用tools目录下的*.ufw文件作为升级文件，设备被动升级采用db_update_data.bin作为升级文件
+## 4. API接口说明
+- 设备主动升级API (update_loader_download.h)
+```
+/* *****************************************************************************/
+/**                                                       
+ * \Brief :        initializes the active update module v1 
+ *                                                        
+ * \Param :        update_type - which meida for getting update data 
+ * \Param :        result_cbk - callback for update result handle
+ * \Param :        cbk_priv - priv param for callback func
+ * \Param :        p_op_api - remote file operation APIs  
+ */                                                       
+/* *****************************************************************************/
+void app_update_loader_downloader_init(                   
+    int update_type,                                      
+    void (*result_cbk)(void *priv, u8 type, u8 cmd),      
+    void *cbk_priv,                                       
+    update_op_api_t *p_op_api);                           
+                                                          
+typedef struct _update_mode_info_t {                      
+    s32 type;                                               //update type
+    void (*state_cbk)(int type, u32 status, void *priv);    //callback for update state handle
+    const update_op_api_t *p_op_api;                        //remote file operation APIs
+    u8 task_en;                                             //enable/disable to create update task
+} update_mode_info_t;                                     
+                                                          
+/* *****************************************************************************/
+/**                                                       
+ * \Brief :        initializes the active update module v2 
+ *                                                        
+ * \Param :        info - active update info structure    
+ *                                                        
+ * \Return :                                              
+ */                                                       
+/* *****************************************************************************/
+int app_active_update_task_init(update_mode_info_t *info);                                          
+```
+- 设备被动升级API（dual_bank_passive_update.h）
 ```
 /* @brief:Api for getting the buffer size for temporary storage
  */
