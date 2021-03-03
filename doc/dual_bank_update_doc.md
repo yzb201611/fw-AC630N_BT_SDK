@@ -23,14 +23,14 @@
 - 双备份设备主动升级流程图
 <br/>
 <div align="center">
-  <img src="./双备份设备主动升级.png" height="600">
+  <img src="./dual_bank_active_update_flow_chart.png" height="600">
 </div>
 <br/>
 
 - 双备份设备被动升级流程图
 <br/>
 <div align="center">
-  <img src="./双备份被动升级流程图.png" height="600">
+  <img src="./dual_bank_passive_update_flow_chart.png" height="600">
 </div>
 <br/>
 
